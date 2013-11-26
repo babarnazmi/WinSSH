@@ -31,12 +31,14 @@ Configuration
     For both domain and local, it is best to run the command twice (remember to use >>, not >). If you use both, make sure to edit the file to remove any duplicate entires.
 
       mkgroup -l >> ..\etc\group      (local groups)
+      
       mkgroup -d >> ..\etc\group      (domain groups)
 
 4.  Use mkpasswd to add authorized users into the passwd file. For local users, use the "-l" switch. For domain users, use the "-d" switch.
     For both domain and local, it is best to run the command twice (remember to use >>, not >). If you use both, make sure to edit the file to remove any duplicate entires.
 
       mkpasswd -l [-u <username>] >> ..\etc\passwd      (local users)
+      
       mkpasswd -d [-u <username>] >> ..\etc\passwd      (domain users)
 
     NOTE: To add users from a domain that is not the primary domain of the machine, add the domain name after the user name.
