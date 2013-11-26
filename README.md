@@ -7,9 +7,9 @@ General Features
 
     * Security, if you want to access your Windows Machines cmd shell with full security.
     * Windows NT Service Support
-    * Full install about 5mb, installer under 3mb (Cygwin bloat has increased the size)
+    * Full install about 5mb, installer under 4mb (Cygwin dependcies has increased the size)
     * Windows Command Prompt support for SSH Terminal
-    * SCP/SFTP server support (file transfer)
+    * SCP/SFTP server support (secure file transfer)
     * Command-line clients included
 
 Download Setup from : https://github.com/babarnazmi/WinSSH/raw/master/downloads/WinSSH.exe
@@ -30,16 +30,20 @@ Configuration
 3.  Use mkgroup to create a group permissions file. For local groups, use the "-l" switch. For domain groups, use the "-d" switch.
     For both domain and local, it is best to run the command twice (remember to use >>, not >). If you use both, make sure to edit the file to remove any duplicate entires.
 
-      mkgroup -l >> ..\etc\group      (local groups)
+      mkgroup -l >> ..\etc\group      
+      (-l is for local groups)
       
-      mkgroup -d >> ..\etc\group      (domain groups)
+      mkgroup -d >> ..\etc\group      
+      (-d is for domain groups)
 
 4.  Use mkpasswd to add authorized users into the passwd file. For local users, use the "-l" switch. For domain users, use the "-d" switch.
     For both domain and local, it is best to run the command twice (remember to use >>, not >). If you use both, make sure to edit the file to remove any duplicate entires.
 
-      mkpasswd -l [-u <username>] >> ..\etc\passwd      (local users)
+      mkpasswd -l [-u <username>] >> ..\etc\passwd      
+      (-l is for local users)
       
-      mkpasswd -d [-u <username>] >> ..\etc\passwd      (domain users)
+      mkpasswd -d [-u <username>] >> ..\etc\passwd      
+      (-d if for domain users)
 
     NOTE: To add users from a domain that is not the primary domain of the machine, add the domain name after the user name.
     NOTE: Ommitting the username switch adds ALL users from the machine or domain, including service accounts and the Guest account.
