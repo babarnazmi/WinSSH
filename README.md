@@ -1,7 +1,7 @@
 WinSSH
 ======
 
-OpenSSH for Windows 6.4p1 
+OpenSSH (6.4p1) for Windows 
 
 General Features
 
