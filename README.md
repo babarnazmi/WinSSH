@@ -46,7 +46,7 @@ Configuration
 
 5.  Start the OpenSSH server.
 
-      net start opensshd
+      net start "openssh server"
 
 6.  Test the server. Using a seperate machine as the client is best. If you connect but the connection immediately gets dropped, reboot the machine with the server and try connecting again.
 
