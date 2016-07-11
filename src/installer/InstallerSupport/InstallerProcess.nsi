@@ -28,6 +28,7 @@ Section "Shared Tools" Shared
   File bin\cyggcc_s-1.dll
   File bin\cygssp-0.dll
   File bin\cygcrypt-0.dll
+  File bin\tail.exe
 
   ;Set the output to the docs directory
   SetOutPath $INSTDIR\docs
