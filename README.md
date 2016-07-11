@@ -13,6 +13,7 @@ General Features
     * Windows Command Prompt support for SSH Terminal
     * SCP/SFTP server support (secure file transfer)
     * Command-line clients included
+    * Added tail command
 
 Download Setup from : https://github.com/babarnazmi/WinSSH/raw/master/downloads/WinSSH.exe
 For more information and comments please visit : http://blogs.silicontechnix.com/?p=934
