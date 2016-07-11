@@ -1,11 +1,9 @@
 WinSSH
 ======
 
-<<<<<<< HEAD
 OpenSSH (7.2p2) for Windows 
 =======
-OpenSSH (6.4p1) for Windows 
->>>>>>> origin/master
+
 
 General Features
 
